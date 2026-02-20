@@ -161,7 +161,7 @@ export default function TradeForm() {
               >
                 TradeBook
               </div>
-              <div className="text-[10px] text-[#4a4d52] tracking-widest uppercase">
+              <div className="text-[10px] text-[#adadad] tracking-widest uppercase">
                 Entry Setup
               </div>
             </div>
@@ -180,11 +180,14 @@ export default function TradeForm() {
           <div className="lg:col-span-2 space-y-6">
             {/* Stock + Direction */}
             <div className="bg-[#111214] border border-[#1e2023] rounded-lg p-5">
-              <div className="section-label">Instrument</div>
+              <div className="section-label">
+                {" "}
+                <p className="text-[#d0d0d0]">Instrument</p>
+              </div>
               <div className="grid grid-cols-2 gap-4">
                 {/* Stock Name */}
                 <div className="col-span-2 relative">
-                  <label className="block text-[11px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                  <label className="block text-[11px] text-[#d0d0d0] mb-2 uppercase tracking-wider">
                     Stock Name
                   </label>
                   <input
@@ -225,7 +228,7 @@ export default function TradeForm() {
 
                 {/* Direction */}
                 <div className="col-span-2">
-                  <label className="block text-[11px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                  <label className="block text-[11px] text-[#d0d0d0] mb-2 uppercase tracking-wider">
                     Trade Direction
                   </label>
                   <div className="flex gap-2">
@@ -249,7 +252,7 @@ export default function TradeForm() {
 
                 {/* Category */}
                 <div className="col-span-2">
-                  <label className="block text-[11px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                  <label className="block text-[11px] text-[#d0d0d0] mb-2 uppercase tracking-wider">
                     Trade Category
                   </label>
                   <div className="flex flex-wrap gap-2">
@@ -281,7 +284,10 @@ export default function TradeForm() {
 
             {/* Price Levels */}
             <div className="bg-[#111214] border border-[#1e2023] rounded-lg p-5">
-              <div className="section-label">Price Levels</div>
+              <div className="section-label  ">
+                {" "}
+                <p className="text-[#d0d0d0]">Price Levels</p>
+              </div>
 
               {/* Entry */}
               <div className="mb-5">
@@ -296,7 +302,7 @@ export default function TradeForm() {
                 </div>
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       Min Entry ₹
                     </label>
                     <input
@@ -313,7 +319,7 @@ export default function TradeForm() {
                     )}
                   </div>
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       Max Entry ₹
                     </label>
                     <input
@@ -330,7 +336,7 @@ export default function TradeForm() {
                     )}
                   </div>
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       Market Price ₹
                     </label>
                     <input
@@ -364,7 +370,7 @@ export default function TradeForm() {
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       Min Target ₹
                     </label>
                     <input
@@ -381,7 +387,7 @@ export default function TradeForm() {
                     )}
                   </div>
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       Max Target ₹
                     </label>
                     <input
@@ -415,7 +421,7 @@ export default function TradeForm() {
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       SL Price ₹
                     </label>
                     <input
@@ -432,7 +438,7 @@ export default function TradeForm() {
                     )}
                   </div>
                   <div>
-                    <label className="block text-[10px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                    <label className="block text-[10px] text-[#bdbdbd] mb-2 uppercase tracking-wider">
                       SL Type
                     </label>
                     <select
@@ -468,9 +474,12 @@ export default function TradeForm() {
 
             {/* Notes + Risky */}
             <div className="bg-[#111214] border border-[#1e2023] rounded-lg p-5">
-              <div className="section-label">Additional Info</div>
+              <div className="section-label">
+                {" "}
+                <p className="text-[#d0d0d0]">Additional Info</p>
+              </div>
               <div className="mb-4">
-                <label className="block text-[11px] text-[#4a4d52] mb-2 uppercase tracking-wider">
+                <label className="block text-[11px] text-[#d0d0d0] mb-2 uppercase tracking-wider">
                   Reason / Notes
                 </label>
                 <textarea
@@ -546,7 +555,7 @@ export default function TradeForm() {
                   </div>
                 </div>
               ) : (
-                <div className="text-[12px] text-[#2d2f33] mb-4">
+                <div className="text-[12px] text-[#bababa] mb-4">
                   Select a stock
                 </div>
               )}
