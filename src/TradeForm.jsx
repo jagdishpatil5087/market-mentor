@@ -517,8 +517,6 @@ export default function TradeForm() {
               ref={first}
               className="bg-[#111214] border border-[#1e2023] rounded-lg p-5 sticky top-6"
             >
-              <div className="section-label">Trade Preview</div>
-
               {form.stockName ? (
                 <div className="mb-4">
                   <div
@@ -549,7 +547,7 @@ export default function TradeForm() {
                 </div>
               ) : (
                 <div className="text-[12px] text-[#2d2f33] mb-4">
-                  Select a stock to preview
+                  Select a stock
                 </div>
               )}
 
@@ -583,7 +581,7 @@ export default function TradeForm() {
                   },
                 ].map((row) => (
                   <div key={row.label} className="preview-row">
-                    <span className="text-[11px] text-[#4a4d52]">
+                    <span className="text-[11px] text-[#dcdcdc]">
                       {row.label}
                     </span>
                     <span
