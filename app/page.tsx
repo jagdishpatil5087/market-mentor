@@ -1,6 +1,6 @@
 import Image from "next/image";
-import TradeForm from "@/src/TradeForm";
+import ActiveTrades from "@/src/ActiveTrades";
 
 export default function Home() {
-  return <TradeForm />;
+  return <ActiveTrades />;
 }
